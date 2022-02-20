@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aamir Nathani" />
+    <link rel="icon" href="../assets/icon-logo-1.jpg" />
+    <title>Products - Watches World</title>
+
+    <!-- nomark-ui Import -->
+    <link
+      rel="stylesheet"
+      href="https://nomark-ui.netlify.app/styles/nomark.css"
+    />
+
+    <!-- Internal Import -->
+    <link rel="stylesheet" href="../style/product.css" />
+    <link rel="stylesheet" href="../style/watch-common.css" />
+  </head>
+  <!-- navbar -->
+  <nav class="navbar-container sticky z-5">
+    <div class="navbar-logo-container">
+      <a href="../index.html"
+        ><img
+          src="../assets/watches-world-logo.png"
+          alt="watches-world-logo"
+          class="navbar-logo"
+      /></a>
+    </div>
+    <a class="open-menu font-size-6"><i class="fas fa-bars"></i></a>
+    <a class="close-menu font-size-6"><i class="fa fa-times"></i></a>
+    <div class="navbar-items-container">
+      <div class="navbar-search-container border-radius-2">
+        <input
+          type="text"
+          class="navbar-search"
+          placeholder="What you are looking for?"
+        />
+        <i class="fas fa-search navbar-search-btn"></i>
+      </div>
+      <ul class="navbar-links">
+        <li>
+          <a href="" class="border-radius-2"
+            ><i class="fas fa-user"></i>Login</a
+          >
+        </li>
+        <li>
+          <a href="" class="border-radius-2"
+            ><i class="fas fa-heart"></i>Wishlist</a
+          >
+        </li>
+        <li>
+          <a href="" class="border-radius-2"
+            ><i class="fas fa-shopping-cart"></i>Cart</a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="flex">
+    <!-- filter sidebar  -->
+    <section class="filter-sidebar-container flex flex-col sticky p-5">
+      <div class="flex justify-between items-center my-3">
+        <p class="font-size-6 font-bold">Filters</p>
+        <p>Clear</p>
+      </div>
+      <!-- price filter -->
+      <div class="my-3">
+        <h3 class="font-bold">Price</h3>
+        <label>
+          <input
+            class="filter-slider my-3"
+            type="range"
+            min="5"
+            max="100"
+            value="1"
+          />
+        </label>
+      </div>
+      <!-- brand filter -->
+      <div class="my-3">
+        <h3 class="font-bold">Brands</h3>
+        <div class="my-3">
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>Rolex</label>
+          </li>
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>Rado</label>
+          </li>
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>Tissot</label>
+          </li>
+        </div>
+      </div>
+      <!-- rating filter -->
+      <div class="my-3">
+        <h3 class="font-bold">Rating</h3>
+        <div class="my-3">
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>4 stars & above</label>
+          </li>
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>3 stars & above</label>
+          </li>
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>2 stars & above</label>
+          </li>
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>1 stars & above</label>
+          </li>
+        </div>
+      </div>
+      <!-- sort by filter -->
+      <div class="my-3">
+        <h3 class="font-bold">Sort by</h3>
+        <div class="my-3">
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>Price - Low to High</label>
+          </li>
+          <li class="list-item-container">
+            <input type="checkbox" />
+            <label>Price - High to Low</label>
+          </li>
+        </div>
+      </div>
+    </section>
+    <!-- product main page -->
+    <section
+      class="product-page-container flex flex-col justify-ceneter items-center my-8"
+    >
+      <div>
+        <h1 class="section-heading font-bold border-radius-1 p-2">Products</h1>
+      </div>
+      <main class="flex flex-wrap justify-center">
+        <!-- cards -->
+        <div class="card card-vertical border-radius-1 m-8">
+          <div class="card-vertical-image">
+            <img
+              src="https://nomark-ui.netlify.app/assests/card-image.jpeg"
+              alt="watch"
+              class="card-img border-radius-1"
+            />
+            <i class="far fa-heart wishlist-icon"></i>
+            <span class="card-image-badge">Special Edition</span>
+          </div>
+          <div class="card-content">
+            <div class="card-heading">
+              <h3>Tag Heuer-CR7</h3>
+            </div>
+            <div class="card-product-price">
+              <span class="product-discount-price">₹4,999.00</span>
+              <span class="product-original-price">₹9,999.00</span>
+            </div>
+            <div class="product-discount-percent">50% Discount</div>
+            <a href="">
+              <button class="card-btn border-radius-1">
+                <i class="fas fa-shopping-cart card-btn-icon"></i>Add To Cart
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="card card-vertical border-radius-1 m-8">
+          <div class="card-vertical-image">
+            <img
+              src="https://nomark-ui.netlify.app/assests/card-image.jpeg"
+              alt="watch"
+              class="card-img border-radius-1"
+            />
+            <i class="far fa-heart wishlist-icon"></i>
+            <span class="card-image-badge">Special Edition</span>
+          </div>
+          <div class="card-content">
+            <div class="card-heading">
+              <h3>Tag Heuer-CR7</h3>
+            </div>
+            <div class="card-product-price">
+              <span class="product-discount-price">₹4,999.00</span>
+              <span class="product-original-price">₹9,999.00</span>
+            </div>
+            <div class="product-discount-percent">50% Discount</div>
+            <a href="">
+              <button class="card-btn border-radius-1">
+                <i class="fas fa-shopping-cart card-btn-icon"></i>Add To Cart
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="card card-vertical border-radius-1 m-8">
+          <div class="card-vertical-image">
+            <img
+              src="https://nomark-ui.netlify.app/assests/card-image.jpeg"
+              alt="watch"
+              class="card-img border-radius-1"
+            />
+            <i class="far fa-heart wishlist-icon"></i>
+          </div>
+          <div class="card-content">
+            <div class="card-heading">
+              <h3>Tag Heuer-CR7</h3>
+            </div>
+            <div class="card-product-price">
+              <span class="product-discount-price">₹4,999.00</span>
+              <span class="product-original-price">₹9,999.00</span>
+            </div>
+            <div class="product-discount-percent">50% Discount</div>
+            <a href="">
+              <button class="card-btn border-radius-1">
+                <i class="fas fa-shopping-cart card-btn-icon"></i>Add To Cart
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="card card-vertical border-radius-1 m-8">
+          <div class="card-vertical-image">
+            <img
+              src="https://nomark-ui.netlify.app/assests/card-image.jpeg"
+              alt="watch"
+              class="card-img border-radius-1"
+            />
+            <i class="far fa-heart wishlist-icon"></i>
+          </div>
+          <div class="card-content">
+            <div class="card-heading">
+              <h3>Tag Heuer-CR7</h3>
+            </div>
+            <div class="card-product-price">
+              <span class="product-discount-price">₹4,999.00</span>
+              <span class="product-original-price">₹9,999.00</span>
+            </div>
+            <div class="product-discount-percent">50% Discount</div>
+            <a href="">
+              <button class="card-btn border-radius-1">
+                <i class="fas fa-shopping-cart card-btn-icon"></i>Add To Cart
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="card card-vertical border-radius-1 m-8">
+          <div class="card-text-overlay border-radius-1">
+            <span>Out of Stock</span>
+          </div>
+          <div class="card-vertical-image">
+            <img
+              src="https://nomark-ui.netlify.app/assests/card-image.jpeg"
+              alt="watches"
+              class="card-img"
+            />
+            <i class="far fa-heart wishlist-icon"></i>
+          </div>
+          <div class="card-content">
+            <div class="card-heading">
+              <h3>Tag Heuer-CR7</h3>
+            </div>
+            <div class="card-product-price">
+              <span class="product-discount-price">₹4,999.00</span
+              ><span class="product-original-price">₹9,999.00</span>
+            </div>
+            <div class="product-discount-percent">50% Discount</div>
+            <button class="card-btn">
+              <i class="fas fa-shopping-cart card-btn-icon"></i>Add To Cart
+            </button>
+          </div>
+        </div>
+        <div class="card card-vertical border-radius-1 m-8">
+          <div class="card-vertical-image">
+            <img
+              src="https://nomark-ui.netlify.app/assests/card-image.jpeg"
+              alt="watch"
+              class="card-img border-radius-1"
+            />
+            <i class="far fa-heart wishlist-icon"></i>
+          </div>
+          <div class="card-content">
+            <div class="card-heading">
+              <h3>Tag Heuer-CR7</h3>
+            </div>
+            <div class="card-product-price">
+              <span class="product-discount-price">₹4,999.00</span>
+              <span class="product-original-price">₹9,999.00</span>
+            </div>
+            <div class="product-discount-percent">50% Discount</div>
+            <a href="">
+              <button class="card-btn border-radius-1">
+                <i class="fas fa-shopping-cart card-btn-icon"></i>Add To Cart
+              </button>
+            </a>
+          </div>
+        </div>
+      </main>
+    </section>
+  </div>
+  <script src="../script/navbar.js"></script>
+
+  <body></body>
+</html>
