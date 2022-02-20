@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aamir Nathani" />
+    <link rel="icon" href="../assets/icon-logo-1.jpg" />
+    <title>Login - Watches World</title>
+
+    <!-- nomark-ui Import -->
+    <link rel="stylesheet" href="https://nomark-ui.netlify.app/styles/nomark.css" />
+
+    <!-- Internal Import -->
+    <link rel="stylesheet" href="../style/login.css" />
+    <link rel="stylesheet" href="../style/watch-common.css" />
+</head>
+<!-- navbar -->
+<nav class="navbar-container sticky z-5">
+    <div class="navbar-logo-container">
+        <a href="../index.html"><img src="../assets/watches-world-logo.png" alt="watches-world-logo"
+                class="navbar-logo" /></a>
+    </div>
+    <a class="open-menu font-size-6"><i class="fas fa-bars"></i></a>
+    <a class="close-menu font-size-6"><i class="fa fa-times"></i></a>
+    <div class="navbar-items-container">
+        <div class="navbar-search-container border-radius-2">
+            <input type="text" class="navbar-search" placeholder="What you are looking for?" />
+            <i class="fas fa-search navbar-search-btn"></i>
+        </div>
+        <ul class="navbar-links">
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-user"></i>Login</a>
+            </li>
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-heart"></i>Wishlist</a>
+            </li>
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-shopping-cart"></i>Cart</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- login section -->
+<section class="login-section section-center flex justify-center items-center">
+    <div class="login-main-container flex flex-col items-center">
+        <h1 class="section-heading font-bold border-radius-1 p-2 my-4">Login</h1>
+        <form class="">
+            <label class="input-label my-4">Username*
+                <input type="text" placeholder="Enter your username" class="input">
+            </label>
+            <label class="input-label my-4">Password*
+                <input type="password" placeholder="Enter your password" class="input">
+            </label>
+            <div class="flex items-center">
+                <label class="flex items-center font-bold my-4 letter-spacing-zero">
+                    <input type="checkbox"> Remember me
+                </label>
+                <a href="" class="forget-password letter-spacing-zero ml-8">Forget your Password</a>
+            </div>
+            <button class="btn primary-outline-btn font-size-6 py-3">Login</button>
+        </form>
+        <a href="" class="new-account-btn">Create New Account <i class="fas fa-long-arrow-alt-right mx-1"></i></a>
+    </div>
+</section>
+
+<script src="../script/navbar.js"></script>
+
+<body></body>
+
+</html>
