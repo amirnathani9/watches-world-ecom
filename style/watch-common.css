@@ -1,0 +1,15 @@
+:root{
+    --primary-color-transparent:rgba(2, 129, 149, 0.1);
+}
+
+.card{
+    transition: all ease-in-out 300ms;
+    box-shadow: 5px 5px 10px var(--primary-color-transparent);
+    padding: 1rem;
+    border: none;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 50px var(--primary-color-transparent);
+}
