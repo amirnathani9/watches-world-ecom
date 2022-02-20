@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aamir Nathani" />
+    <link rel="icon" href="../assets/icon-logo-1.jpg" />
+    <title>Cart - Watches World</title>
+
+    <!-- nomark-ui Import -->
+    <link rel="stylesheet" href="https://nomark-ui.netlify.app/styles/nomark.css" />
+
+    <!-- Internal Import -->
+    <link rel="stylesheet" href="../style/cart.css" />
+    <link rel="stylesheet" href="../style/watch-common.css" />
+</head>
+<!-- navbar -->
+<nav class="navbar-container sticky z-5">
+    <div class="navbar-logo-container">
+        <a href="../index.html"><img src="../assets/watches-world-logo.png" alt="watches-world-logo"
+                class="navbar-logo" /></a>
+    </div>
+    <a class="open-menu font-size-6"><i class="fas fa-bars"></i></a>
+    <a class="close-menu font-size-6"><i class="fa fa-times"></i></a>
+    <div class="navbar-items-container">
+        <div class="navbar-search-container border-radius-2">
+            <input type="text" class="navbar-search" placeholder="What you are looking for?" />
+            <i class="fas fa-search navbar-search-btn"></i>
+        </div>
+        <ul class="navbar-links">
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-user"></i>Logout</a>
+            </li>
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-heart"></i>Wishlist</a>
+            </li>
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-shopping-cart"></i>Cart</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- cart main container -->
+<div class="flex flex-col justify-center items-center my-4">
+    <h1 class="section-heading font-bold border-radius-1 p-2 my-8">My Cart</h1>
+    <div class="cart-main-container section-center flex">
+        <!-- cart cards section -->
+        <section class="cart-cards-section flex flex-wrap justify-center">
+            <div class="card card-horizontal card-shadow border-radius-1 m-8">
+                <div class="card-horizontal-image">
+                    <img src="https://nomark-ui.netlify.app/assests/card-image.jpeg" alt="watches"
+                        class="card-img border-radius-1">
+                </div>
+                <div class="card-content ">
+                    <div class="card-heading">
+                        <h3>Tag Heuer-CR7</h3>
+                    </div>
+                    <div class="card-product-price">
+                        <span class="product-discount-price">₹4,999.00</span><span
+                            class="product-original-price">₹9,999.00</span>
+                    </div>
+                    <div class="flex mb-3 items-center">
+                        <span>Quantity: </span>
+                        <span class="quantity-remove">&#8722</span>
+                        <span class="card-quantity">1</span>
+                        <span class="quantity-add"> &#43</span>
+                    </div>
+                    <button class="card-btn font-size-4 border-radius-1"><i
+                            class="fas fa-shopping-cart card-btn-icon"></i>Move To
+                        wishlist</button>
+                    <button class="card-secondary-btn font-size-4 border-radius-1"></i>Remove from Cart</button>
+                </div>
+            </div>
+            <div class="card card-horizontal card-shadow border-radius-1 m-8">
+                <div class="card-horizontal-image">
+                    <img src="https://nomark-ui.netlify.app/assests/card-image.jpeg" alt="watches"
+                        class="card-img border-radius-1">
+                </div>
+                <div class="card-content ">
+                    <div class="card-heading">
+                        <h3>Tag Heuer-CR7</h3>
+                    </div>
+                    <div class="card-product-price">
+                        <span class="product-discount-price">₹4,999.00</span><span
+                            class="product-original-price">₹9,999.00</span>
+                    </div>
+                    <div class="flex mb-3 items-center">
+                        <span>Quantity: </span>
+                        <span class="quantity-remove">&#8722</span>
+                        <span class="card-quantity">1</span>
+                        <span class="quantity-add"> &#43</span>
+                    </div>
+                    <button class="card-btn font-size-4 border-radius-1"><i
+                            class="fas fa-shopping-cart card-btn-icon"></i>Move To
+                        wishlist</button>
+                    <button class="card-secondary-btn font-size-4 border-radius-1"></i>Remove from Cart</button>
+                </div>
+            </div>
+        </section>
+        <!-- cart price details -->
+        <section class="cart-price-section flex flex-col items-center">
+            <div class="card-price-container flex flex-col border-radius-2 m-8 p-8">
+                <h2 class="font-bold my-3">Price Details</h2>
+
+                <div class="flex justify-between font-bold my-3"><span>Price</span><span>₹9,999.00</span></div>
+                <div class="flex justify-between my-3"><span>Discount</span><span>₹4,999.00</span></div>
+                <div class="flex justify-between my-3"><span>Delivery Charges</span><span>₹999.00</span></div>
+                <div class="flex justify-between font-bold my-3"><span>Total Amount</span><span>₹5,998.00</span></div>
+                <p class="my-3">You will save Rs ₹4,999.00 on this order</p>
+                <button class="btn primary-outline-btn font-size-5 border-radius-1">Proceed to Checkout</button>
+            </div>
+        </section>
+    </div>
+</div>
+
+<script src="../script/navbar.js"></script>
+
+<body></body>
+
+</html>
