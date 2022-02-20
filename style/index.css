@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@500&display=swap');
 
+/* Top Image Container */
 .main-image-container {
     background: linear-gradient(var(--primary-color-transparent), rgba(2, 129, 149, 0.8)), url("../assets/bg-image.jpg");
     background-repeat: no-repeat;
@@ -27,9 +28,10 @@
 .primary-outline-btn:hover {
     background-color: transparent;
     transform: translateY(-2px);
-    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.2); / *this rgba variant is used only here */
 }
 
+/* Section */
 .section-heading{
     color: var(--primary-color);
     border-bottom: 0.25rem solid var(--primary-color);
@@ -49,6 +51,7 @@
     box-shadow: 5px 5px 50px var(--primary-color-transparent);
 }
 
+/* Media Query */
 @media only screen and (max-width: 600px) {
     .main-image-container {
         border-radius: 0;
