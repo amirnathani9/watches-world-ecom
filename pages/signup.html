@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aamir Nathani" />
+    <link rel="icon" href="../assets/icon-logo-1.jpg" />
+    <title>Signup - Watches World</title>
+
+    <!-- nomark-ui Import -->
+    <link rel="stylesheet" href="https://nomark-ui.netlify.app/styles/nomark.css" />
+
+    <!-- Internal Import -->
+    <link rel="stylesheet" href="../style/signup.css" />
+    <link rel="stylesheet" href="../style/watch-common.css" />
+</head>
+<!-- navbar -->
+<nav class="navbar-container sticky z-5">
+    <div class="navbar-logo-container">
+        <a href="../index.html"><img src="../assets/watches-world-logo.png" alt="watches-world-logo"
+                class="navbar-logo" /></a>
+    </div>
+    <a class="open-menu font-size-6"><i class="fas fa-bars"></i></a>
+    <a class="close-menu font-size-6"><i class="fa fa-times"></i></a>
+    <div class="navbar-items-container">
+        <div class="navbar-search-container border-radius-2">
+            <input type="text" class="navbar-search" placeholder="What you are looking for?" />
+            <i class="fas fa-search navbar-search-btn"></i>
+        </div>
+        <ul class="navbar-links">
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-user"></i>Login</a>
+            </li>
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-heart"></i>Wishlist</a>
+            </li>
+            <li>
+                <a href="" class="border-radius-2"><i class="fas fa-shopping-cart"></i>Cart</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- signup section -->
+<section class="signup-section section-center flex justify-center items-center">
+    <div class="signup-main-container flex flex-col items-center border-radius-2">
+        <h1 class="section-heading font-bold border-radius-1 p-2 my-2">Signup</h1>
+        <form>
+            <label class="input-label my-2">First Name*
+                <input type="text" placeholder="Enter your first name" class="input border-radius-1">
+            </label>
+            <label class="input-label my-2">Last Name*
+                <input type="text" placeholder="Enter your last name" class="input border-radius-1">
+            </label>
+            <label class="input-label my-2">Email*
+                <input type="email" placeholder="Enter your email" class="input border-radius-1">
+            </label>
+            <label class="input-label my-2">Password*
+                <input type="password" placeholder="Enter your password" class="input border-radius-1">
+            </label>
+            <label class="input-label my-2">Confirm Password*
+                <input type="password" placeholder="Enter your password again" class="input border-radius-1">
+            </label>
+            <label class="flex items-center font-bold my-4 letter-spacing-zero">
+                <input type="checkbox"> I accept all the Terms & Conditions
+            </label>
+            <button class="btn primary-outline-btn font-size-6 border-radius-1 py-3">Signup</button>
+        </form>
+        <a href="" class="new-account-btn">Already have an account <i class="fas fa-long-arrow-alt-right mx-1"></i></a>
+    </div>
+</section>
+
+<script src="../script/navbar.js"></script>
+
+<body></body>
+
+</html>
