@@ -46,3 +46,7 @@
     justify-content: center;
     margin: 0rem;
 }
+
+.letter-spacing-zero{
+    letter-spacing: 0px;
+}
